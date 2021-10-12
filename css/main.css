@@ -87,6 +87,419 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
+
+
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1em;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #152A3E;
+  background-color: white;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color:#152A3E;
+  text-decoration: none;
+}
+
+h1 {
+  color:#152A3E;
+  font-family: 'Lexend Tera', sans-serif;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  width: 100%;
+}
+
+h2 {
+  color:#152A3E;
+  font-family: 'Lexend Tera', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  width: 100%;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+.project-link,
+.skills-header p {
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  color:#152A3E;
+}
+
+h3,
+h4,
+h5 {
+  font-family: 'Lexend Tera', sans-serif;
+  line-height: 1.5;
+  width: 100%;
+}
+
+p,
+li {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+span {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+/* Structural Styles */
+
+header,
+#work,
+#skills,
+#about,
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+}
+
+.content-wrapper {
+  width: 85%;
+}
+
+#work p,
+#about p {
+  width: 100%;
+  text-align: left;
+}
+/* Margins and Paddings */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+nav {
+  margin-bottom: 60px;
+}
+
+#work {
+  margin-top: 60px;
+}
+
+#skills {
+  margin-bottom: 0px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+#about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+footer {
+  padding: 60px 0;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+h4 {
+  margin: 0 0 40px 0;
+}
+
+.project-description {
+  margin: 0 0 30px 0;
+}
+
+.project-link {
+  margin: 40px 0 60px 0;
+}
+
+figure {
+  margin: 20px 0 40px 0;
+}
+
+.skills-header {
+  margin-bottom: 20px;
+}
+
+.about-info h3 {
+  margin: 40px 0 40px 0;
+}
+
+.about-text {
+  margin: 0 0 30px 0;
+}
+
+#contact h3 {
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  margin: 0 0 60px 0;
+}
+
+
+/* --------------- Base Header Styles ------------------ */
+
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #F7E8E8;
+}
+
+header nav ul li {
+  font-size: .75rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav #contact-link {
+  background-color: #f2b440;
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+
+#contact-link:hover {
+  background-color: #F8D697;
+  font-size: .8rem;
+}
+
+nav a:hover {
+  background-color:#F8D697;
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  width: 100%;
+  font-size: 2rem;
+}
+
+header h2 {
+  width: 100%;
+}
+
+/* --------------------- Mobile Styles ----------------- */
+
+#work,
+#skills {
+  width: 100%
+}
+
+#work h3 {
+  width: 100%;
+}
+
+.portfolio-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.portfolio-item {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center; 
+}
+
+.portfolio-item h4 {
+  font-weight: bold;
+}
+
+.portfolio-item figure {
+  width: 100%;
+  filter: drop-shadow(1px 2px 8px lightgrey);
+}
+
+.project-link {
+  background-color: #f2b440;
+  padding: .75rem 3.75rem;
+  border-radius: 30px;
+  color:#FFFFFF;
+}
+
+.project-link:hover {
+  background-color: #F8D697;
+  color: #152A3E;
+}
+
+#skills {
+  background-color: #F7E8E8;
+}
+
+#skills h3 {
+  margin: 20px 0 40px 0;
+  font-weight: bold;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.skills-text {
+  margin: 0 0 40px 0;
+  text-align: left;
+}
+
+#skills .content-wrapper {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-top: 1px solid #EC91C4;
+  border-bottom: 1px solid #EC91C4;
+}
+
+/* About */
+
+#about {
+  width: 100%;
+  background-color: #F7E8E8;
+}
+
+#profile-image {
+  width: 70%;
+  border-radius: 30px;
+  border: 20px solid white;
+}
+
+#about h3,
+#about h4,
+#about p {
+  color: #152A3E;
+}
+
+/* ----------------- Base Footer Styles ----------------- */
+
+footer {
+  padding-bottom: 40px;
+}
+
+footer .content-wrapper {
+  border-top: 1px solid #f2b440;
+  padding-top: 30px;
+}
+
+footer .contact-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  border-bottom: 1px solid #f2b440;
+  padding-bottom: 80px;
+}
+footer h3 {
+  font-size: .75rem;
+  color:#EC91C4;
+  text-align: left;
+}
+footer .contact-info {
+  width: 100%;
+  margin-bottom: 15px;
+  
+}
+footer h5 {
+  font-size: 1rem;
+  text-align: left;
+  overflow-wrap: break-word;
+  
+}
+
+footer h5:hover {
+  color: #f2b440;
+}
+
+footer a:hover {
+  color: #f2b440;
+}
+
+footer .social {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer ul {
+  width: 100%;
+}
+
+footer .social-icons li {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer i {
+  font-size: 1em;
+}
+
+#copyright {
+  padding-top: 60px;
+  font-size: .75em;
+}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
