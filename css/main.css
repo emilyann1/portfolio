@@ -214,7 +214,7 @@ p {
 
 header {
   padding-top: 30px;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
 }
 
 nav {
@@ -289,6 +289,12 @@ figure {
 
 header {
   background-color: #F7E8E8;
+  background-image: url('../img/dog.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
 }
 
 header nav ul li {
@@ -307,6 +313,7 @@ nav #contact-link {
 #contact-link:hover {
   background-color: #F8D697;
   font-size: .9rem;
+  color: rgb(236, 25, 95);
 }
 
 nav a:hover {
@@ -325,11 +332,16 @@ header h1 {
   font-size: 2rem;
 }
 
-header h2 {
-  width: 100%;
-}
+
 
 /* --------------------- Mobile Styles ----------------- */
+
+header h2 {
+  width: 65%;
+  text-align: right;
+  margin-left: 120px;
+  padding: 10px;
+}
 
 #work,
 #skills {
@@ -377,15 +389,16 @@ header h2 {
 }
 
 #skills {
-  background-color: #F7E8E8;
+  background-color: ;
 }
 
 #skills h3 {
   margin: 20px 0 40px 0;
   font-weight: bold;
   text-align: left;
-  font-size: 1.2em;
+  font-size: 1.4rem;
 }
+
 
 .skills-text {
   margin: 0 0 40px 0;
@@ -393,8 +406,8 @@ header h2 {
 }
 
 #skills .content-wrapper {
-  padding-top: 20px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 80px;
   border-top: 1px solid #EC91C4;
   border-bottom: 1px solid #EC91C4;
 }
@@ -403,7 +416,7 @@ header h2 {
 
 #about {
   width: 100%;
-  background-color: #F7E8E8;
+  background-color: #fff6f8;
 }
 
 #profile-image {
@@ -441,6 +454,7 @@ footer h3 {
   font-size: .75rem;
   color:#EC91C4;
   text-align: left;
+  text-transform: uppercase;
 }
 footer .contact-info {
   width: 100%;
@@ -488,6 +502,22 @@ footer .social-icons li {
 
 footer i {
   font-size: 1em;
+}
+
+footer .top {
+  text-align: center;
+  padding-top: 40px;
+}
+
+footer .top a {
+  background-color: powderblue;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.top a:hover {
+  color:#152A3E;
+  font-size: 1.1rem;
 }
 
 #copyright {
@@ -584,6 +614,23 @@ footer i {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+   @media only screen and (min-width: 552px) {
+     header h2 {
+       width: 60%;
+       padding-left: 30px;
+       margin-left: 180px;
+     }
+   } 
+
+
+   @media only screen and (min-width: 668px) {
+
+    header h2 {
+      padding-left: 60px;
+      margin-left: 199px;
+    }
+
+   }
 
 @media only screen and (min-width: 768px) {
   /* Tablet Styles */
@@ -633,7 +680,7 @@ footer i {
   }
 
   #contact h3 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   
   footer h5 {
@@ -649,7 +696,12 @@ footer i {
 
   header {
     padding-top: 60px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
+  }
+
+  header h2 {
+    width: 50%;
+    margin-left: 200px; 
   }
   
   nav {
@@ -661,9 +713,10 @@ footer i {
   }
 
   #skills { 
-    padding-top: 90px;
+    padding-top: 80px;
     padding-bottom: 80px;
   }
+
 
   .skills-header {
     margin-bottom: 50px;
@@ -763,7 +816,7 @@ footer i {
   }
 
   .about-info h4 {
-    text-align: left;
+    text-align: center;
   }
 
   /* Footer */
@@ -798,6 +851,10 @@ footer i {
     max-width: 900px;
   }
 
+  header h2 {
+    margin-left: 310px;
+  }
+
   .about-info h3 {
     font-size: 3.5rem;
   }
@@ -824,6 +881,7 @@ footer i {
 
   header h2 {
     font-size: 1.8rem;
+    padding-left: 480px;
   }
 
   h3 {
@@ -839,7 +897,7 @@ footer i {
   }
 
   #contact h3 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
 
   h4 {
@@ -851,6 +909,10 @@ footer i {
   }
   footer h5 {
     font-size: 2.2rem;
+  }
+
+  .top a {
+    font-size: 1rem;
   }
 
   .about-info h3 {
@@ -878,7 +940,7 @@ footer i {
 
   header {
     padding-top: 80px;
-    padding-bottom: 140px;
+    padding-bottom: 160px;
   }
 
   nav {
