@@ -330,7 +330,9 @@ nav #contact-link {
     background-color: #F8D697;
     color: rgb(218, 25, 89);
 }
-
+nav a {
+    padding: 0;
+}
 nav a:hover {
     background-color: #F8D697;
     padding: 10px;
@@ -340,7 +342,7 @@ nav a:hover {
 nav ul {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
 }
 
 header h1 {
